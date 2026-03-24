@@ -1,0 +1,11 @@
+- name: Multiplay books
+  hosts: local
+  connection: local
+  tasks: 
+  - name: hello from play1 and task1
+    ansible.builtin.debug:
+      msg: "Hello Play1"
+  - name: hello from play1 and task2
+    ansible.builtin.debug:
+      msg: "Hello Play2"
+   
