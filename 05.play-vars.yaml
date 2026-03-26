@@ -1,0 +1,11 @@
+- name: Variables
+  host: local
+  connection: local
+  vars:
+    NAME: kumar
+    VILLAGE: Mukkamala
+  tasks:
+  - name: print my information
+    ansible.builtin.debug:
+    #vars refernce should be surrounded by ""
+      msg: "Hello, my name is {{ NAME }} and my village is {{ VILLAGE}}"" 
