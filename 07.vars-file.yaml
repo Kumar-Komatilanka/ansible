@@ -1,0 +1,9 @@
+- name: declaring vars from files
+  hosts: local
+  connection: local
+  vars_files:
+  - files.yaml
+  tasks:
+  - name: print vars from files
+    ansible.builtin.debug:
+     msg: "Hello I am {{ NAME }}, I am from {{ CITY }} and currently working in {{ COMPANY }}"
