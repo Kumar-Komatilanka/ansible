@@ -8,4 +8,4 @@
   - name: print my information
     ansible.builtin.debug:
     #vars refernce should be surrounded by ""
-      msg: "Hello, my name is {{ NAME }} and my village is {{ VILLAGE}}"" 
+      msg: "Hello, my name is {{ NAME }} and my village is {{ VILLAGE }}"" 
