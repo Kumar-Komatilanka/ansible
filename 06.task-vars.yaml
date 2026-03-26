@@ -1,0 +1,16 @@
+- name: Declaring variables in both play and task levels
+  hosts: local
+  connection: local
+  vars:
+    NAME: kumar
+    VILLAGE: Mukkamala
+  tasks:
+  - name: print my information
+    vars:
+      NAME: Ravi
+      VILLAGE: Irusumanda
+    ansible.builtin.debug:
+      msg: "Hello, my name is {{ NAME }} and my village is {{ VILLAGE }}"
+  - name: print my information
+    ansible.builtin.debug:
+      msg: "Hello, my name is {{ NAME }} and my village is {{ VILLAGE }}"
