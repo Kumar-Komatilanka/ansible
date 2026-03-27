@@ -11,8 +11,8 @@
     private: false
   tasks:
   - name: print the username
-    vars: 
-    NAME: Ramesh
+      vars: 
+        NAME: Ramesh
     ansible.builtin.debug:
       msg: "{{ NAME }}"
 
