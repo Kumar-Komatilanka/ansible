@@ -9,7 +9,7 @@
   - name: NAME
     prompt: Please enter NAME
     private: false
-  # tasks:
+    tasks:
   # - name: print the username
   #   vars: 
   #       NAME: Ramesh
