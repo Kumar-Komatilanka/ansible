@@ -6,7 +6,7 @@
   vars_files:
   - files.yaml
   vars_prompt:
-  - name: Mahesh
+  - name: NAME
     promt: Please enter your name
     private: false
   tasks:
