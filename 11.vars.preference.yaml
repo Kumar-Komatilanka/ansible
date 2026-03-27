@@ -7,7 +7,7 @@
   - files.yaml
   vars_prompt:
   - name: NAME
-    promt: Please enter NAME
+    prompt: Please enter NAME
     private: false
   tasks:
   - name: print the username
